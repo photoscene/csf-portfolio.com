@@ -1,0 +1,409 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+@font-face {
+    font-family: Proxima-light;
+    src: url("../fonts/Proxima Nova Alt Light.otf");
+    font-weight:400;
+}
+
+@font-face {
+    font-family: Proxima-bold;
+    src: url("../fonts/Proxima Nova Alt Bold.otf");
+    font-weight:400;
+}
+
+@font-face {
+    font-family: Proxima-thin;
+    src: url("../fonts/Proxima Nova Alt Thin.otf");
+    /*font-weight:400;*/
+}
+
+.container-fluid {
+    padding: 0;
+    position: relative;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header {
+    height: 100px;
+    background-color: rgba(255,255,255,0.9);
+    width: auto;
+    padding: 25px 100px;
+    margin: 0;
+}
+
+.menu {
+    list-style:  none;
+    display: inline;
+    line-height: 75px;
+    font-size: 2.5em;
+    color: #7f8381;
+    font-family: Proxima-light;
+}
+
+ul.dropdown-menu {
+    border-radius: 0;
+}
+
+.menu li {
+    padding-right: 30px;
+}
+
+.dropdown-menu li:hover {
+    border-bottom: none;
+}
+
+.dropdown-menu li {
+    font-size: 1.6em;
+    padding-left: 30px;
+    line-height: 40px;
+    width: 220px;
+    border-radius: 0;
+}
+
+.menu li a {
+    color: grey;
+}
+
+.menu li a:hover {
+    color: #ff7f51;
+    text-decoration: none;
+    border-bottom: 3px solid #ff7f51;
+}
+
+.menu li a:focus {
+    text-decoration: none;
+}
+
+.hamburger{
+	max-width: 50%;
+	height: 50px;
+        font-family: Proxima-thin;
+	background-color: white;
+	border: 1px solid #f1f1f1;
+	border-bottom: 3px solid #ff7f51;
+	color: #ff7f51;
+	line-height: 50px;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	font-size: 1.3em;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+        display: none;
+}
+
+.logo {
+    display: inline;
+    background-image: url('../images/logo.png');
+    height: 47px;
+    width: 330px;
+    float: left;
+}
+
+.hero {
+    max-width: 100%;
+    max-height: 670px;
+    overflow: hidden;
+    margin-top: 100px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+}
+.hero-image {
+    max-width: 1400px;
+    height: 670px;
+    background-image: url('../images/hero1.jpg')
+}
+
+.hero p {
+    font-family: Proxima-light;
+    font-size: 60px;
+    color: white;
+    line-height: 40px;
+}
+
+.hero-typo {
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    bottom: 450px;
+    float: right;
+    right: 100px;
+}
+
+.quick-navigation {
+    min-height: 130px;
+    background-color: white;
+    font-family: Proxima-light;
+    font-size: 2em;
+    color: #787878;
+    line-height: 130px;
+}
+
+.quick {
+    /*border: 1px solid #dadada; */
+    width: 33%;
+}
+
+.quick:hover {
+    background-color: #efefef;
+    color: #ff7f51;
+}
+
+a .quick {
+    color: #787878;
+}
+
+.about {
+    /*background: url(../images/about_bg.jpg);
+    background-repeat: no-repeat;*/
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-height: 900px;
+}
+
+.about-content {
+    z-index: 3;
+    max-width: 800px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 25%;
+    right: 8%;
+}
+
+.internet1 {
+    background-color: #eeeeee;
+    padding-bottom: 100px;
+    max-width: 100%;
+    height: 800px;
+    position: relative;
+    border-bottom: 15px solid #dadada;
+    overflow: hidden;
+}
+
+.reference-block1, .reference-block2, reference-block3 {
+    /*background-color: #eeeeee;*/
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /*height: 100%;*/
+    position: relative;
+    border-bottom: 15px solid #dadada;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.reference-text {
+    width: 50%;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.reference-block1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.reference-block2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.reference-block3 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.reference-block1 li {
+    padding: 0;
+    display: inline-block;
+    width: 25%;
+    float: left;
+}
+
+.reference-block2 li {
+    padding: 0;
+    display: inline-block;
+    width: 33%;
+    float: left;
+}
+
+.reference-block3 li {
+    padding: 0;
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+.thumbnails {
+    width: 100%;
+    /*display: inline-block;*/
+    border: 1px solid #dadada;
+    opacity: 0.2; 
+    transition: opacity 1s;
+    cursor: pointer;
+    position: relative;
+}
+
+.thumbnails:hover {
+    opacity: 1;
+}
+
+.label {
+    width: inherit;
+    position: absolute;
+    bottom: 446px;
+    left: 0px;
+    padding: 20px 20px;
+    z-index: 100;
+    text-align: center;
+    background-color: black;
+    color: #dadada;
+    font-family: Proxima-thin;
+    font-size: 1.6em;
+    border-radius: 0;
+    opacity: 0.5;
+    display: none;
+}
+
+.internet-content {
+    width: 500px;
+    position: relative;
+    right: -40%;
+    top: -125%;
+}
+
+.list-inline {
+    margin-left: -15px;
+    padding: 0;
+}
+
+.contact {
+    max-width: 700px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: Proxima-thin;
+    font-size: 1.58em;
+    float: none;
+    margin: 0 auto;
+}
+
+.personal-details {
+    padding-right: 70px;
+    float: left
+}
+
+.contact a {
+    color: #ff7f51;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact li {
+    display: inline-block;
+}
+
+.form-horizontal {
+    padding-top: 50px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ff7f51;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border: none;
+    border-bottom: 1px solid #ff7f51;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-default {
+    color: white;
+    background-color: #ff7f51;
+    border: none;
+}
+
+.btn {
+    border-radius: 0;
+    font-size: 1.3em;
+    padding: 10px 16px;
+}
+
+.icon {
+    padding-right: 20px;
+}
+
+p {
+    font-family: Proxima-light;
+    font-size: 2em;
+} 
+
+.about-content p {
+    font-size: 2.3em;
+}
+
+h1 {
+    font-family: Proxima-light;
+    font-size: 5em;
+    color: #959ca5;
+    padding-bottom: 30px;
+    position: absolute;
+}
+
+h2 {
+    font-family: Proxima-light;
+    font-size: 4em;
+    color: #ff7f51;
+    padding: 20px 0px;
+}
+
+.work-subcategory {
+    font-size: 1.2em;
+    padding: 0;
+    display: inline;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
