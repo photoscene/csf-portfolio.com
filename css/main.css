@@ -99,7 +99,7 @@ ul.dropdown-menu {
 .menu > ul > li a:hover {
     color: #ff7f51;
     text-decoration: none;
-    border-bottom: 3px solid #ff7f51;
+    border-bottom: none;
 }
 
 .menu > ul > li a:focus {
@@ -112,6 +112,10 @@ ul.dropdown-menu {
     line-height: 40px;
     width: 220px;
     border-radius: 0;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: transparent;
 }
 
 .logo {
