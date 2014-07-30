@@ -51,6 +51,39 @@
     font-family: Proxima-light;
 }
 
+.footer {
+    background-color: gray;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+}
+
+.navbar-collapse.collapse {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.navbar-nav {
+    padding-top: 16px;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+    height: 100px;
+}
+
+.navbar-toggle {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+}
+.navbar-toggle .icon-bar {
+    width: 38px;
+    height: 5px;
+}
+
 ul.dropdown-menu {
     border-radius: 0;
 }
@@ -59,8 +92,18 @@ ul.dropdown-menu {
     padding-right: 30px;
 }
 
-.dropdown-menu li:hover {
-    border-bottom: none;
+.menu > ul > li a {
+    color: grey;
+}
+
+.menu > ul > li a:hover {
+    color: #ff7f51;
+    text-decoration: none;
+    border-bottom: 3px solid #ff7f51;
+}
+
+.menu > ul > li a:focus {
+    text-decoration: none;
 }
 
 .dropdown-menu li {
@@ -71,45 +114,14 @@ ul.dropdown-menu {
     border-radius: 0;
 }
 
-.menu li a {
-    color: grey;
-}
-
-.menu li a:hover {
-    color: #ff7f51;
-    text-decoration: none;
-    border-bottom: 3px solid #ff7f51;
-}
-
-.menu li a:focus {
-    text-decoration: none;
-}
-
-.hamburger{
-	max-width: 50%;
-	height: 50px;
-        font-family: Proxima-thin;
-	background-color: white;
-	border: 1px solid #f1f1f1;
-	border-bottom: 3px solid #ff7f51;
-	color: #ff7f51;
-	line-height: 50px;
-	position: absolute;
-	top: 25px;
-	right: 25px;
-	font-size: 1.3em;
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-        display: none;
-}
-
 .logo {
     display: inline;
     background-image: url('../images/logo.png');
     height: 47px;
     width: 330px;
     float: left;
+    margin-left: 25px;
+    margin-top: 7%;
 }
 
 .hero {
@@ -154,7 +166,7 @@ ul.dropdown-menu {
 
 .quick {
     /*border: 1px solid #dadada; */
-    width: 33%;
+    width: 33,333%;
 }
 
 .quick:hover {
@@ -187,7 +199,8 @@ a .quick {
 }
 
 .internet1 {
-    background-color: #eeeeee;
+    background-color: white;
+    /*background-image: url('../images/internet_bg.jpg');*/
     padding-bottom: 100px;
     max-width: 100%;
     height: 800px;
@@ -288,7 +301,7 @@ a .quick {
     width: 500px;
     position: relative;
     right: -40%;
-    top: -125%;
+    top: -145%;
 }
 
 .list-inline {
@@ -300,7 +313,7 @@ a .quick {
     max-width: 700px;
     height: auto;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     font-family: Proxima-thin;
     font-size: 1.58em;
     float: none;
@@ -370,9 +383,9 @@ p {
 h1 {
     font-family: Proxima-light;
     font-size: 5em;
-    color: #959ca5;
+    color: white;
     padding-bottom: 30px;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 h2 {
