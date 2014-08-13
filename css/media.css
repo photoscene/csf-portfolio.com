@@ -12,9 +12,6 @@
         font-size: 3.5em;
         right: 605px;
         top: 20px;
-    }
-    h2{
-        font-size: 2.5em;
     } 
     p {
         font-size: 2em;
@@ -34,19 +31,6 @@
         right: 5%;
         top: 21%;
         margin: 0;
-    }
-    .about-content p {
-        font-size: 1.5em;
-    }
-    .internet1 {
-        height: 710px;
-    }
-    .internet-content {
-        top: -110%;
-        width: 440px;
-    }
-    .internet-content p{
-        font-size: 1.5em;
     }
     .header {
         padding: 25px 35px;
@@ -116,11 +100,7 @@
         width: 90%;
         font-size: 1.2em;
     }
-    h1 {
-        font-size: 3em;
-        right: 475px;
-        color: white;
-    }
+
 }
 
 @media (max-width: 768px) {
@@ -194,11 +174,15 @@
     }
 }
 
+@media (min-width: 480px) {
+    margin-top: 5%;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
     .logo {
         background-image: url('../images/logo2.png');
         background-repeat: no-repeat;
-        margin-top: -13%;
+        margin-top: -15%;
         margin-left: 50px;
     }
     .navbar-toggle {
@@ -235,7 +219,9 @@
     .about {
         overflow: visible;
         height: 100%;
-        background-color: #EEE;
+    }
+    .about-bg {
+        display: none;
     }
     .internet1 {
         height: 460px;

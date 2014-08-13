@@ -207,15 +207,31 @@ a {
     }
     &:hover .work-subcategory {
         font-size: 1.5em;
+        @media (max-width: 1024px) {
+            font-size: 1.1em;
+        }
     }
 }
 
 .icon {
     top: 25%;
-    left: 25%;
+    left: 21%;
     position: absolute;
     opacity: 1;
     @include transition (all 500ms ease);
+
+    @media (max-width: 1280px) {
+        width: 60px;
+        left: 11%;
+        top: 27%;
+    }
+    @media (max-width: 1024px) {
+        width: 16%;
+        left: 8%;
+    }
+    @media (max-width: 768px) {
+        top: 35%;
+    }
 }
 
 .work-subcategory {
@@ -232,6 +248,13 @@ a {
     background-color: #f7f7f7;
     height: 200px;
     margin-top: -20px;
+
+    @media (max-width: 1280px) {
+        height: 150px;
+    }
+    @media (max-width: 1024px) {
+        height: 100px;
+    }
 }
 
 .hero {
@@ -271,6 +294,11 @@ a {
     position: relative;
     width: 100%;
     max-height: 900px;
+    background-color: white;
+    
+    @media (min-width: 320px) and (max-width: 767px) {
+        background-color: white;
+    }
 }
 
 .about-content {
@@ -291,10 +319,13 @@ a {
     position: relative;
     border-bottom: 15px solid #dadada;
     overflow: hidden;
+
+    @media (max-width: 1280px) {
+        height: 710px;
+    }
 }
 
 .internet-content {
-    width: 500px;
     position: relative;
     right: -40%;
     top: -145%;
@@ -304,19 +335,43 @@ a {
     float: left;
     position: absolute;
     left: -700px;
+    top: 60px;
+    z-index: 15;
+
+    @media (max-width: 768px) {
+        top: -64px;
+    }
 }
 
 .internet-photo-right {
     float: right;
     position: absolute;
     right: -620px;
+    top: 100px;
+    z-index: 15;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .internet-text {
-    top: 1163px;
-    position: absolute;
     color: black;
-    @extend p;
+    top: 140px;
+    position: relative;
+    left: -180px;
+    z-index: 20;
+
+    @media (max-width: 1280px) {
+        left: -120px;
+        font-size: 1.5em;
+    }
+    @media (max-width: 1024px) {
+        left: -95px;
+    }
+    @media (max-width: 768px) {
+        top: 95px;
+    }
 }
 
 .reference-text {
@@ -377,7 +432,14 @@ a {
 
 .personal-details {
     padding-right: 70px;
-    float: left
+    float: left;
+    position: relative;
+    left: -800px;
+}
+
+.datas {
+    position: relative;
+    right: -1050px;
 }
 
 .contact {
@@ -389,6 +451,7 @@ a {
     font-size: 1.58em;
     float: none;
     margin: 0 auto;
+    overflow: hidden;
 
     a {
         color: $baseOrange;
@@ -456,14 +519,32 @@ h1 {
     font-size: 5em;
     color: white;
     padding-bottom: 30px;
+
+    @media (max-width: 1024px) {
+        font-size: 3em;
+        right: 475px;
+    }
 }
 
 h2 {
     font-family: $baseFont;
     font-size: 4em;
     color: $baseOrange;
-    top: 925px;
-    position: absolute;
+    position: relative;
+    top: -70px;
+    left: -180px;
+
+    @media (max-width: 1280px) {
+        left: -120px;
+        font-size: 3em;
+    }
+    @media (max-width: 1024px) {
+        left: -95px;
+        font-size: 2.8em;
+    }
+    @media (max-width: 768px) {
+        top: -105px;
+    }
 }
 
 h3 {
@@ -471,6 +552,18 @@ h3 {
     font-size: 4em;
     color: $baseGrey;
     line-height: 200px;
+
+    @media (max-width: 1280px) {
+        line-height: 145px;
+        font-size: 3em;
+    }
+    @media (max-width: 1024px) {
+        line-height: 100px;
+        font-size: 2.5em;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+        font-size: 1.8em;
+    }
 }
 
 p {
