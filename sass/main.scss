@@ -1,0 +1,486 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+
+@font-face {
+    font-family: Proxima-light;
+    src: url("../fonts/Proxima Nova Alt Light.otf");
+    font-weight:400;
+}
+
+@font-face {
+    font-family: Proxima-bold;
+    src: url("../fonts/Proxima Nova Alt Bold.otf");
+    font-weight:400;
+}
+
+@font-face {
+    font-family: Proxima-thin;
+    src: url("../fonts/Proxima Nova Alt Thin.otf");
+}
+
+$baseFont: Proxima-light;
+$baseFontBold: Proxima-bold;
+$baseFontLight: Proxima-thin;
+$baseOrange: #ff7f51;
+$baseGrey: #7f7f7f;
+$lightGrey: #efefef;
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+a {
+    color: $baseGrey;
+    &:hover {
+        text-decoration: none;
+        color: $baseOrange;
+    }
+    &:focus {
+        @extend a:hover;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+    position: relative;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer {
+    background-color: gray;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+
+    &:hover {
+        @extend .footer;
+        color: $baseOrange;
+    }
+
+    &:focus {
+        @extend .footer;
+        color: white;
+    }
+}
+
+.header {
+    height: 100px;
+    background-color: rgba(255,255,255,0.9);
+    width: auto;
+    padding: 25px 100px;
+    margin: 0;
+}
+
+/* ====================== nav ======================*/
+
+.menu {
+    list-style:  none;
+    display: inline;
+    line-height: 75px;
+    font-size: 2.5em;
+    color: #7f8381;
+    font-family: $baseFont;
+
+    li {
+        padding-right: 30px;
+    }
+}
+
+.navbar-collapse.collapse {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.navbar-nav {
+    padding-top: 16px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    border-bottom: 3px solid rgba(255, 127, 81, 0);
+    color: $baseGrey;
+    @include transition (all 200ms ease-in);
+
+    &:hover {
+        border-bottom: 3px solid rgba(255, 127, 81, 1);
+        color: $baseOrange;
+    }
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+    height: 100px;
+}
+
+.navbar-toggle {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+}
+.navbar-toggle .icon-bar {
+    width: 38px;
+    height: 5px;
+}
+
+.dropdown-menu {
+    ul {
+        border-radius: 0;
+    }
+    li {
+        font-size: 1.6em;
+        padding-left: 10px;
+        line-height: 40px;
+        width: 220px;
+        border-radius: 0;
+
+        a {
+            &:hover {
+                background-color: transparent;
+            }
+
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.logo {
+    display: inline;
+    background-image: url('../images/logo.png');
+    height: 47px;
+    width: 330px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 7%;
+}
+
+.quick-navigation {
+    min-height: 130px;
+    background-color: white;
+    font-family: $baseFont;
+    font-size: 2em;
+    line-height: 130px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.quick {
+    width: 33,333%;
+    background-color: white;
+    color: $baseGrey;
+
+
+    &:hover {
+        background-color: $lightGrey;
+        color: $baseOrange;
+        transition: all 200ms ease;
+    }
+    &:hover .move-right {
+        opacity: 0;
+        transform: translate(350px,0);
+        -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+        -o-transform: translate(350px,0); /** Opera **/
+        -moz-transform: translate(350px,0); /** Firefox **/
+    }
+    &:hover .work-subcategory {
+        font-size: 1.5em;
+    }
+}
+
+.icon {
+    top: 25%;
+    left: 25%;
+    position: absolute;
+    opacity: 1;
+    @include transition (all 500ms ease);
+}
+
+.work-subcategory {
+    font-size: 1.2em;
+    // padding: 0;
+    display: inline;
+    transition: font-size 300ms ease 150ms;
+}
+
+/* ========================== structure =====================*/
+
+.category-bg {
+    width: 100%;
+    background-color: #f7f7f7;
+    height: 200px;
+    margin-top: -20px;
+}
+
+.hero {
+    max-width: 100%;
+    max-height: 670px;
+    overflow: hidden;
+    margin-top: 100px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+
+    p {
+        font-family: $baseFont;
+        font-size: 60px;
+        color: white;
+        line-height: 40px;
+    }
+}
+
+.hero-image {
+    max-width: 1400px;
+    height: 670px;
+    background-image: url('../images/hero1.jpg')
+}
+
+.hero-typo {
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    bottom: 450px;
+    float: right;
+    right: 100px;
+}
+
+.about {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-height: 900px;
+}
+
+.about-content {
+    z-index: 3;
+    max-width: 800px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 25%;
+    right: 8%;
+}
+
+.internet1 {
+    padding-bottom: 100px;
+    max-width: 100%;
+    height: 800px;
+    position: relative;
+    border-bottom: 15px solid #dadada;
+    overflow: hidden;
+}
+
+.internet-content {
+    width: 500px;
+    position: relative;
+    right: -40%;
+    top: -145%;
+}
+
+.internet-photo-left {
+    float: left;
+    position: absolute;
+    left: -700px;
+}
+
+.internet-photo-right {
+    float: right;
+    position: absolute;
+    right: -620px;
+}
+
+.internet-text {
+    top: 1163px;
+    position: absolute;
+    color: black;
+    @extend p;
+}
+
+.reference-text {
+    width: 50%;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.reference-block1 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    border-bottom: 15px solid #dadada;
+    overflow: hidden;
+    z-index: 2;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        padding: 0;
+        display: inline-block;
+        width: 25%;
+        float: left;
+    }
+}
+
+.reference-block2 {
+    @extend .reference-block1;
+    li {
+        width: 33%;
+    }
+}
+
+.reference-block3 {
+    @extend .reference-block1;
+    li {
+        width: 50%;
+    }
+}
+
+.thumbnails {
+    width: 100%;
+    /*display: inline-block;*/
+    border: 1px solid #dadada;
+    opacity: 0.2; 
+    transition: opacity 1s;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        @extend .thumbnails;
+        opacity: 1;
+    }
+}
+
+.personal-details {
+    padding-right: 70px;
+    float: left
+}
+
+.contact {
+    max-width: 700px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-family: Proxima-thin;
+    font-size: 1.58em;
+    float: none;
+    margin: 0 auto;
+
+    a {
+        color: $baseOrange;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+/* ===================== form ====================*/
+
+.label {
+    width: inherit;
+    position: absolute;
+    bottom: 446px;
+    left: 0px;
+    padding: 20px 20px;
+    z-index: 100;
+    text-align: center;
+    background-color: black;
+    color: #dadada;
+    font-family: Proxima-thin;
+    font-size: 1.6em;
+    border-radius: 0;
+    opacity: 0.5;
+    display: none;
+}
+
+.form-horizontal {
+    padding-top: 50px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid $baseOrange;
+    border-radius: 0;
+    box-shadow: none;
+    &:focus {
+        @extend .form-control;
+        outline: none;
+    }
+}
+
+.btn-default {
+    color: white;
+    background-color: $baseOrange;
+    border: none;
+}
+
+.btn {
+    border-radius: 0;
+    font-size: 1.3em;
+    padding: 10px 16px;
+}
+
+/* =====================   typography ================== */
+
+h1 {
+    font-family: $baseFont;
+    font-size: 5em;
+    color: white;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-family: $baseFont;
+    font-size: 4em;
+    color: $baseOrange;
+    top: 925px;
+    position: absolute;
+}
+
+h3 {
+    font-family: $baseFontBold;
+    font-size: 4em;
+    color: $baseGrey;
+    line-height: 200px;
+}
+
+p {
+    font-family: $baseFont;
+    font-size: 2em;
+} 
+
+.about-content p {
+    font-size: 2.3em;
+}
+
+
+

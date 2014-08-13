@@ -1,426 +1,435 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\000037}}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
 
-
-
-@font-face {
-    font-family: Proxima-light;
-    src: url("../fonts/Proxima Nova Alt Light.otf");
-    font-weight:400;
-}
-
-@font-face {
-    font-family: Proxima-bold;
-    src: url("../fonts/Proxima Nova Alt Bold.otf");
-    font-weight:400;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000312}}
+.cf:after {
+  clear: both; }
 
 @font-face {
-    font-family: Proxima-thin;
-    src: url("../fonts/Proxima Nova Alt Thin.otf");
-    /*font-weight:400;*/
-}
+  font-family: Proxima-light;
+  src: url("../fonts/Proxima Nova Alt Light.otf");
+  font-weight: 400; }
+@font-face {
+  font-family: Proxima-bold;
+  src: url("../fonts/Proxima Nova Alt Bold.otf");
+  font-weight: 400; }
+@font-face {
+  font-family: Proxima-thin;
+  src: url("../fonts/Proxima Nova Alt Thin.otf"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000348}}
+a {
+  color: #7f7f7f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000350}}
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #ff7f51; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000359}}
 .container-fluid {
-    padding: 0;
-    position: relative;
-}
+  padding: 0;
+  position: relative; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000364}}
 .row {
-    margin-left: 0;
-    margin-right: 0;
-}
+  margin-left: 0;
+  margin-right: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000369}}
+.footer, .footer:hover, .footer:focus {
+  background-color: gray;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000376}}
+  .footer:hover {
+    color: #ff7f51; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000381}}
+  .footer:focus {
+    color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000387}}
 .header {
-    height: 100px;
-    background-color: rgba(255,255,255,0.9);
-    width: auto;
-    padding: 25px 100px;
-    margin: 0;
-}
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: auto;
+  padding: 25px 100px;
+  margin: 0; }
 
+/* ====================== nav ======================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\0000397}}
 .menu {
-    list-style:  none;
-    display: inline;
-    line-height: 75px;
-    font-size: 2.5em;
-    color: #7f8381;
-    font-family: Proxima-light;
-}
+  list-style: none;
+  display: inline;
+  line-height: 75px;
+  font-size: 2.5em;
+  color: #7f8381;
+  font-family: Proxima-light; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003105}}
+  .menu li {
+    padding-right: 30px; }
 
-.footer {
-    background-color: gray;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    color: white;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003110}}
 .navbar-collapse.collapse {
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
+  padding-bottom: 10px;
+  padding-top: 10px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003115}}
 .navbar-nav {
-    padding-top: 16px;
-}
+  padding-top: 16px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003119}}
+.navbar-default .navbar-nav > li > a {
+  border-bottom: 3px solid rgba(255, 127, 81, 0);
+  color: #7f7f7f;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003124}}
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    border-bottom: 3px solid #ff7f51;
+    color: #ff7f51; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003130}}
 .navbar-default {
-    background-color: white;
-    border-color: white;
-    height: 100px;
-}
+  background-color: white;
+  border-color: white;
+  height: 100px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003136}}
 .navbar-toggle {
-    background-color: white;
-    width: 60px;
-    height: 60px;
-}
+  background-color: white;
+  width: 60px;
+  height: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003141}}
 .navbar-toggle .icon-bar {
-    width: 38px;
-    height: 5px;
-}
+  width: 38px;
+  height: 5px; }
 
-ul.dropdown-menu {
-    border-radius: 0;
-}
-
-.menu li {
-    padding-right: 30px;
-}
-
-.menu > ul > li a {
-    color: grey;
-}
-
-.menu > ul > li a:hover {
-    color: #ff7f51;
-    text-decoration: none;
-    border-bottom: none;
-}
-
-.menu > ul > li a:focus {
-    text-decoration: none;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003147}}
+.dropdown-menu ul {
+  border-radius: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003150}}
 .dropdown-menu li {
-    font-size: 1.6em;
-    padding-left: 30px;
-    line-height: 40px;
-    width: 220px;
-    border-radius: 0;
-}
+  font-size: 1.6em;
+  padding-left: 10px;
+  line-height: 40px;
+  width: 220px;
+  border-radius: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003158}}
+  .dropdown-menu li a:hover, .dropdown-menu li a:focus {
+    background-color: transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003162}}
+  .dropdown-menu li a:focus {
+    background-color: transparent; }
 
-.dropdown-menu > li > a:hover {
-    background-color: transparent;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003169}}
 .logo {
-    display: inline;
-    background-image: url('../images/logo.png');
-    height: 47px;
-    width: 330px;
-    float: left;
-    margin-left: 25px;
-    margin-top: 7%;
-}
+  display: inline;
+  background-image: url("../images/logo.png");
+  height: 47px;
+  width: 330px;
+  float: left;
+  margin-left: 25px;
+  margin-top: 7%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003179}}
+.quick-navigation {
+  min-height: 130px;
+  background-color: white;
+  font-family: Proxima-light;
+  font-size: 2em;
+  line-height: 130px;
+  overflow: hidden;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003190}}
+.quick {
+  width: 33,333%;
+  background-color: white;
+  color: #7f7f7f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003196}}
+  .quick:hover {
+    background-color: #efefef;
+    color: #ff7f51;
+    transition: all 200ms ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003201}}
+  .quick:hover .move-right {
+    opacity: 0;
+    transform: translate(350px, 0);
+    -webkit-transform: translate(350px, 0);
+    /** Chrome & Safari **/
+    -o-transform: translate(350px, 0);
+    /** Opera **/
+    -moz-transform: translate(350px, 0);
+    /** Firefox **/ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003208}}
+  .quick:hover .work-subcategory {
+    font-size: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003213}}
+.icon {
+  top: 25%;
+  left: 25%;
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003221}}
+.work-subcategory {
+  font-size: 1.2em;
+  display: inline;
+  transition: font-size 300ms ease 150ms; }
+
+/* ========================== structure =====================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003230}}
+.category-bg {
+  width: 100%;
+  background-color: #f7f7f7;
+  height: 200px;
+  margin-top: -20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003237}}
 .hero {
-    max-width: 100%;
-    max-height: 670px;
-    overflow: hidden;
-    margin-top: 100px;
-    background-color: black;
-    position: relative;
-    text-align: center;
-}
-.hero-image {
-    max-width: 1400px;
-    height: 670px;
-    background-image: url('../images/hero1.jpg')
-}
-
-.hero p {
+  max-width: 100%;
+  max-height: 670px;
+  overflow: hidden;
+  margin-top: 100px;
+  background-color: black;
+  position: relative;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003246}}
+  .hero p, .hero .internet-text {
     font-family: Proxima-light;
     font-size: 60px;
     color: white;
-    line-height: 40px;
-}
+    line-height: 40px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003254}}
+.hero-image {
+  max-width: 1400px;
+  height: 670px;
+  background-image: url("../images/hero1.jpg"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003260}}
 .hero-typo {
-    max-width: 600px;
-    height: auto;
-    position: relative;
-    bottom: 450px;
-    float: right;
-    right: 100px;
-}
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  bottom: 450px;
+  float: right;
+  right: 100px; }
 
-.quick-navigation {
-    min-height: 130px;
-    background-color: white;
-    font-family: Proxima-light;
-    font-size: 2em;
-    color: #787878;
-    line-height: 130px;
-}
-
-.quick {
-    /*border: 1px solid #dadada; */
-    width: 33,333%;
-}
-
-.quick:hover {
-    background-color: #efefef;
-    color: #ff7f51;
-}
-
-a .quick {
-    color: #787878;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003269}}
 .about {
-    /*background: url(../images/about_bg.jpg);
-    background-repeat: no-repeat;*/
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-height: 900px;
-}
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-height: 900px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003276}}
 .about-content {
-    z-index: 3;
-    max-width: 800px;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 25%;
-    right: 8%;
-}
+  z-index: 3;
+  max-width: 800px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 25%;
+  right: 8%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003287}}
 .internet1 {
-    background-color: white;
-    /*background-image: url('../images/internet_bg.jpg');*/
-    padding-bottom: 100px;
-    max-width: 100%;
-    height: 800px;
-    position: relative;
-    border-bottom: 15px solid #dadada;
-    overflow: hidden;
-}
+  padding-bottom: 100px;
+  max-width: 100%;
+  height: 800px;
+  position: relative;
+  border-bottom: 15px solid #dadada;
+  overflow: hidden; }
 
-.reference-block1, .reference-block2, reference-block3 {
-    /*background-color: #eeeeee;*/
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    /*height: 100%;*/
-    position: relative;
-    border-bottom: 15px solid #dadada;
-    overflow: hidden;
-    z-index: 2;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003296}}
+.internet-content {
+  width: 500px;
+  position: relative;
+  right: -40%;
+  top: -145%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003303}}
+.internet-photo-left {
+  float: left;
+  position: absolute;
+  left: -700px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003309}}
+.internet-photo-right {
+  float: right;
+  position: absolute;
+  right: -620px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003315}}
+.internet-text {
+  top: 1163px;
+  position: absolute;
+  color: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003322}}
 .reference-text {
-    width: 50%;
-    padding-bottom: 30px;
-    font-size: 1.5em;
-}
+  width: 50%;
+  padding-bottom: 30px;
+  font-size: 1.5em; }
 
-.reference-block1 ul {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003328}}
+.reference-block1, .reference-block2, .reference-block3 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  border-bottom: 15px solid #dadada;
+  overflow: hidden;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003336}}
+  .reference-block1 ul, .reference-block2 ul, .reference-block3 ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-}
-
-.reference-block2 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.reference-block3 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.reference-block1 li {
+    list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003341}}
+  .reference-block1 li, .reference-block2 li, .reference-block3 li {
     padding: 0;
     display: inline-block;
     width: 25%;
-    float: left;
-}
+    float: left; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003351}}
 .reference-block2 li {
-    padding: 0;
-    display: inline-block;
-    width: 33%;
-    float: left;
-}
+  width: 33%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003358}}
 .reference-block3 li {
-    padding: 0;
-    display: inline-block;
-    width: 50%;
-    float: left;
-}
+  width: 50%; }
 
-.thumbnails {
-    width: 100%;
-    /*display: inline-block;*/
-    border: 1px solid #dadada;
-    opacity: 0.2; 
-    transition: opacity 1s;
-    cursor: pointer;
-    position: relative;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003363}}
+.thumbnails, .thumbnails:hover {
+  width: 100%;
+  /*display: inline-block;*/
+  border: 1px solid #dadada;
+  opacity: 0.2;
+  transition: opacity 1s;
+  cursor: pointer;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003372}}
+  .thumbnails:hover {
+    opacity: 1; }
 
-.thumbnails:hover {
-    opacity: 1;
-}
-
-.label {
-    width: inherit;
-    position: absolute;
-    bottom: 446px;
-    left: 0px;
-    padding: 20px 20px;
-    z-index: 100;
-    text-align: center;
-    background-color: black;
-    color: #dadada;
-    font-family: Proxima-thin;
-    font-size: 1.6em;
-    border-radius: 0;
-    opacity: 0.5;
-    display: none;
-}
-
-.internet-content {
-    width: 500px;
-    position: relative;
-    right: -40%;
-    top: -145%;
-}
-
-.list-inline {
-    margin-left: -15px;
-    padding: 0;
-}
-
-.contact {
-    max-width: 700px;
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 30px;
-    font-family: Proxima-thin;
-    font-size: 1.58em;
-    float: none;
-    margin: 0 auto;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003378}}
 .personal-details {
-    padding-right: 70px;
-    float: left
-}
+  padding-right: 70px;
+  float: left; }
 
-.contact a {
-    color: #ff7f51;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003383}}
+.contact {
+  max-width: 700px;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font-family: Proxima-thin;
+  font-size: 1.58em;
+  float: none;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003393}}
+  .contact a {
+    color: #ff7f51; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003397}}
+  .contact ul {
+    list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003401}}
+  .contact li {
+    display: inline-block; }
 
-.contact ul {
-    list-style: none;
-}
+/* ===================== form ====================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003408}}
+.label {
+  width: inherit;
+  position: absolute;
+  bottom: 446px;
+  left: 0px;
+  padding: 20px 20px;
+  z-index: 100;
+  text-align: center;
+  background-color: black;
+  color: #dadada;
+  font-family: Proxima-thin;
+  font-size: 1.6em;
+  border-radius: 0;
+  opacity: 0.5;
+  display: none; }
 
-.contact li {
-    display: inline-block;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003425}}
 .form-horizontal {
-    padding-top: 50px;
-}
+  padding-top: 50px; }
 
-.form-control {
-    border: none;
-    border-bottom: 1px solid #ff7f51;
-    border-radius: 0;
-    box-shadow: none;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003429}}
+.form-control, .form-control:focus {
+  border: none;
+  border-bottom: 1px solid #ff7f51;
+  border-radius: 0;
+  box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003434}}
+  .form-control:focus {
+    outline: none; }
 
-.form-control:focus {
-    border: none;
-    border-bottom: 1px solid #ff7f51;
-    outline: none;
-    box-shadow: none;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003440}}
 .btn-default {
-    color: white;
-    background-color: #ff7f51;
-    border: none;
-}
+  color: white;
+  background-color: #ff7f51;
+  border: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003446}}
 .btn {
-    border-radius: 0;
-    font-size: 1.3em;
-    padding: 10px 16px;
-}
+  border-radius: 0;
+  font-size: 1.3em;
+  padding: 10px 16px; }
 
-.icon {
-    padding-right: 20px;
-}
-
-p {
-    font-family: Proxima-light;
-    font-size: 2em;
-} 
-
-.about-content p {
-    font-size: 2.3em;
-}
-
+/* =====================   typography ================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003454}}
 h1 {
-    font-family: Proxima-light;
-    font-size: 5em;
-    color: white;
-    padding-bottom: 30px;
-    /*position: absolute;*/
-}
+  font-family: Proxima-light;
+  font-size: 5em;
+  color: white;
+  padding-bottom: 30px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003461}}
 h2 {
-    font-family: Proxima-light;
-    font-size: 4em;
-    color: #ff7f51;
-    padding: 20px 0px;
-}
+  font-family: Proxima-light;
+  font-size: 4em;
+  color: #ff7f51;
+  top: 925px;
+  position: absolute; }
 
-.work-subcategory {
-    font-size: 1.2em;
-    padding: 0;
-    display: inline;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003469}}
+h3 {
+  font-family: Proxima-bold;
+  font-size: 4em;
+  color: #7f7f7f;
+  line-height: 200px; }
 
-a:hover, a:focus {
-    text-decoration: none;
-}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003476}}
+p, .internet-text {
+  font-family: Proxima-light;
+  font-size: 2em; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Macintosh\/Documents\/csabi\/04_munka\/websites\/csfportfolio_new\/bootstrap-3\.1\.1-dist\/sass\/main\.scss}line{font-family:\00003481}}
+.about-content p, .about-content .internet-text {
+  font-size: 2.3em; }
