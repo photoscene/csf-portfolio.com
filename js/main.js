@@ -1,8 +1,39 @@
+// creating pulse on arrow
+
+$.extend($.fn.pulse = function() {
+    var minOpacity = '.5';
+    var fadeOutDuration = 1000;
+    var fadeInDuration = 1000;
+    $(this).attr('pulsing', 'y');
+
+    $(this).animate({
+        opacity: minOpacity
+    }, fadeOutDuration, function() {
+        $(this).animate({
+            opacity: 1
+        }, fadeInDuration, function() {
+            if ($(this).attr('pulsing') === 'y') $(this).pulse();
+        });
+    });
+    return $(this);
+});
+$.extend($.fn.stopPulse = function() {
+    $(this).attr('pulsing', '').stop(true, true).animate({
+        opacity: 1
+    });
+});
+
 $(document).ready(function() {
     $(".about-content").hide();
     $(".internet-content > p").hide();
     
-    $('.hero-typo > span').hide();
+    $(".arrow").pulse();
+    
+    $('.hero-typo').children().first().animate({top: '0px'},200);
+    $('.hero-typo').find(':nth-child(2)').delay(100).animate({right: '0px'},200);
+    $('.hero-typo').find(':nth-child(3)').delay(150).animate({bottom: '0px'},150);
+
+// animate effect on scroll
 
     $(document).scroll(function() {
         var docScroll = $(document).scrollTop();

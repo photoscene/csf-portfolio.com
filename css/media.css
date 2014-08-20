@@ -1,162 +1,24 @@
-@media (max-width: 1920px) {
-    .thumbnails {
-        width: 100%;
-    }
-}
-@media (max-width: 1280px) {
-    .hero-typo {
-        margin-top: -150px;
-        margin-right: -125px;
-    }
-    h1 {
-        font-size: 3.5em;
-        right: 605px;
-        top: 20px;
-    } 
-    p {
-        font-size: 2em;
-    }
-    .internet-content {
-        padding-right: 8%;
-    }
-    .thumbnails {
-        width: 100%;
-    }
-    .about {
-        max-height: 600px;
-    }
-    .about-content {
-        max-height: 500px;
-        width: 550px;
-        right: 5%;
-        top: 21%;
-        margin: 0;
-    }
-    .header {
-        padding: 25px 35px;
-    }
-    .reference-text {
-        width: 80%;
-    }
-    .mainmenu {
-        margin-top: 3%;
-    }
-}  
 
 @media (max-width: 1024px) {
-    .hero-typo {
-        margin-top: -150px;
-        margin-right: -160px;
-    }
-    .menu {
-        font-size: 1.8em;
-    }
+
     ul.dropdown-menu {
         left: -25px;
-    }
-    .thumbnails {
-        width: 100%;
-    }
-    .menu li {
-        padding-right: 10px;
-    }
-    .header {
-        padding: 25px 25px;
-    }
-    .hero p {
-        font-size: 40px;
-    }
-    .hero {
-        max-width: 100%;
-    }
-    /*.quick-navigation {
-        max-height: 180px;
-    }*/
-    .about-content {
-        max-height: 500px;
-        max-width: 450px;
-        right: 3%;
-        top: 21%;
-        margin: 0;
-    }
-    .about-content p {
-        font-size: 1.4em;
-    }
-
-    .work-subcategory {
-        font-size: 1em;
-    }
-    .internet1 {
-        height: 570px;
-    }
-    .internet-content {
-        width: 350px;
-        top: -116%;
     }
     .internet-content p {
         font-size: 1.2em;
     }
-    .reference-text {
-        width: 90%;
-        font-size: 1.2em;
-    }
-
 }
 
 @media (max-width: 768px) {
-    .logo {
-        max-width: 330px;
-        margin-bottom: 40px;
-    }
-    .hero-image {
-        background-image: url('../images/hero768.jpg');
-        height: 500px;
-    }
-    .hero {
-        max-height: 500px;
-    }
-    .hero-typo {
-        margin-top: -30px;
-        margin-right: 0px;
-    }
+
     .hamburger {
         display: inherit;
-    }
-    .menu {
-        display: none;
-    }
-    .mainmenu {
-        margin-top: 3.6%;
     }
     .arrow {
         display: none;
     }
-    .work-subcategory {
-        font-size: 0.8em;
-    }
-    .about-content {
-        float: right;
-        margin: 0;
-        right: 3%;
-        top: 20%;
-        width: 400px;
-        font-size: 0.9em;
-    }
-    .internet1 {
-        padding-top: 50px;
-    }
-    h1 {
-        margin-top: -5px;
-    }
     .internet-content p{
         font-size: 1.1em;
-    }
-    .internet-content{
-        width: 263px;
-    }
-    .reference-text {
-        width: 90%;
-        font-size: 1.2em;
     }
 }
 
@@ -165,127 +27,22 @@
         background-color: white;
         width: 100%;
     }
-    .navbar-nav {
-        margin: 0;
-        padding-top: 0px;
-    }
     .navbar-collapse.collapse {
         padding-top: 0px;
     }
 }
-
-@media (min-width: 480px) {
-    margin-top: 5%;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
-    .logo {
-        background-image: url('../images/logo2.png');
-        background-repeat: no-repeat;
-        margin-top: -15%;
-        margin-left: 50px;
-    }
-    .navbar-toggle {
-        top: 12px;
-        right: 40px;
-    }
-    .header {
-        padding-left: 10px;
-    }
-    .hero-typo {
-        right: 0px;
-        margin-top: 150px;
-    }
-    .quick {
-        width: 100%;
-        height: auto;
-        padding: 5px 0px;
-    }
     .icon {
         display: none;
-    }
-    .work-subcategory {
-        font-size: 1em;
-    }
-    .quick-navigation {
-        line-height:  inherit;
     }
     .work-subcategory:hover {
         text-decoration: none;
     }
-    .about-photo, .internet-photo {
-        display: none;
-    }
-    .about {
-        overflow: visible;
-        height: 100%;
-    }
     .about-bg {
         display: none;
     }
-    .internet1 {
-        height: 460px;
-        /*display: none;*/
-    }
-    .about-content p {
-        color: gray;
-        width: 100%;
-        float: left;
-    }
-    .about-content {
-        width: 90%;
-        margin-top: 25px; 
-        top: 0;
-        max-width: 100%;
-        position: relative;
-    }
-    .internet-content {
-        width: 90%;
-        margin-top: 15px;
-        right: 0px;
-        top: 0px;
-        padding: 0px;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    h1{
-        position: static;
-        color: #ff7f51;
-        text-align: center;
-        margin-top: 20px;
-    } 
-    .internet1 {
-        display: none;
-    }
-    .reference-text {
-        width: 100%;
-        text-align:  left;
-    }
-    .contact {
-        font-size: 0.9em;
-    }
-    .personal-details {
-        padding: 0;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-        left: 60px;
-        bottom: 20px;
-        position: relative;
-    }
-    .form-horizontal {
-        width: 90%;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .control-label {
         font-size: 1.4em;
-    }
-    .contact {
-        padding-bottom: 30px;
-        padding-top: 50px;
     }
     .reference-block1 li {
         width: 50%;
