@@ -58,3 +58,24 @@ $(document).ready(function() {
 
     });
 });
+
+$('#contact-btn').click(function() {
+  $('#user_message').hide();
+  $.post(
+    'ajax/contact.php', 
+    {
+      name: $('#form-name').val(),
+      email: $('#form-email').val(),
+      message: $('#form-message').val()
+    }
+  )
+  .success(function(response) {
+    if(response == 1) {
+      $(this).addClass('disabled');
+    } else {
+      $('#user_message').text(response).show();
+    }
+  });
+  
+  return false;
+});
